@@ -232,7 +232,7 @@ function CacherQuestionPrecedente(){ // cacher la question précédente
 }
 
 function selectAnswer(e){
-    const reponseSelectionne = e.target; // la constante "selectedBtn" est égale au boutton sur lequel on a cliqué
+    const reponseSelectionne = e.target.closest("button");; // la constante "selectedBtn" est égale au boutton sur lequel on a cliqué
     const isCorrect = reponseSelectionne.dataset.correct == "true"; // c'est correct si : dans les données du boutton séléctionné,la variable boolean "correct" est égal à true
 
     if(isCorrect){
