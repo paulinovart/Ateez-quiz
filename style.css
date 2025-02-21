@@ -5,8 +5,42 @@
     box-sizing: border-box;
 }
 
+a.button {
+    background-color:#0e0e52;
+    color: #fff;
+    font-weight: 500;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+h3{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: Sequel100-76;
+    color:#0e0e52;
+}
+
+.gotoquiz{
+    display: flex;
+}
+
+@font-face {
+    font-family : Sequel100-96;
+    src: url(sequel-100-black/Sequel100Black-96.ttf);
+}
+
+@font-face {
+    font-family : Sequel100-76;
+    src: url(sequel-100-black/Sequel100Black-76.ttf);
+}
+
 body{
-    background-color: #001e4d;
+    background-color: rgb(57,10,125);
+    background: linear-gradient(41deg, rgba(57,10,125,1) 21%, rgba(14,14,82,1) 74%);
 }
 .app{
     background-color: #fff;
@@ -17,11 +51,12 @@ body{
     padding: 30px;
 }
 .app h1{
-    font-size: 25px;
-    color:#001e4d;
-    font-weight: 600;
-    border-bottom: 1px solid #001e4d ;
+    font-size: 45px;
+    color:#0e0e52;
+    font-weight: 500;
+    border-bottom: 1px solid #0e0e52 ;
     padding-bottom: 30px;  
+    font-family: Sequel100-96;
 }
 
 .quiz{
@@ -29,12 +64,15 @@ body{
 }
 .quiz h2{
     font-size: 18px;
-    color:#001e4d;
+    color:#0e0e52;
     font-weight: 600px;
+    font-family: Sequel100-76;
 }
 #question{
     margin-top: 20px;
     margin-bottom: 20px;
+    font-family: Sequel100-76;
+    color:#0e0e52;
 }
 
 #answer_buttons{
@@ -42,10 +80,10 @@ body{
 }
 .btn{
     background-color: #fff;
-    color: #222;
+    color: #390a7d;
     font-weight: 500px;
     width: 47%;
-    border: 1px solid #222;
+    border: 1px solid #390a7d;
     padding: 10px;
     margin: 10px 5px;
     text-align: left;
@@ -55,7 +93,7 @@ body{
    
 }
 .btn:hover:not([disabled]){
-    background: #222;
+    background: #390a7d;
     color: #fff;
 }
 .btn:disabled{
@@ -63,7 +101,7 @@ body{
 }
 
 #next_btn{
-    background-color:#001e4d;
+    background-color:#0e0e52;
     color: #fff;
     font-weight: 500;
     width: 150px;
@@ -75,20 +113,25 @@ body{
     display: none;
 }
 
+#next_btn:hover{
+    background: #390a7d;
+}
+
 .correct{
-    background-color: green;
+    background-color: #a0e87e;
 }
 .incorrect{
-    background-color: red;
+    background-color: rgb(231, 141, 141);
 }
 .response_img{
     width: 100%;
 }
-
-@media (max-width: 420px) {
-    #answer_buttons {
-         display: flex;
-         flex-wrap: wrap;
-         gap: 10px;
-    }
+#question_image{
+    border: 1px solid #390a7d;
+    padding: 10px;
+    margin: 10px 5px;
+    text-align: left;
+    border-radius: 4px;
+    display: flex;
+    justify-content:center ;
 }
